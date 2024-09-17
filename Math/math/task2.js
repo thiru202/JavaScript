@@ -1,0 +1,1 @@
+console.log(Math.random(2100,2))

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal</title>
+    <style>
+        body{
+            background-color: rgb(6, 179, 179);
+            border-radius: 20px solid black;
+            
+        }
+        #row{
+            display: flex;
+        }
+        #col1{
+            width: 300px;
+        }
+        #col1{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 150px;
+            justify-content: space-evenly;
+            color: white;
+            margin-left: 100px;
+            font-size: 50px;
+        }
+        #col2{
+            background-color: black;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-left: 250px;
+            width: 300px;
+            border-radius: 75px;
+        }
+        .stop,.ready,.go{
+            height: 100px;
+            width: 100px;
+            margin:5px;
+            border-radius: 50%;
+            margin-left: 100px;
+           flex-direction: row;
+            background-color: cornsilk;
+            font-size: 50px;
+        }
+        #stop0,#stop1,#stop2{
+            border-radius: 15px;
+            padding-left: 15px;
+            background-color: black;
+        }
+        h1{
+            width: 50%;
+            text-align: end;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Traffic Light</h1>
+    <div id="row">
+        <div id="col1">
+            <div id="stop0" onclick="Stop()">Stop</div>
+            <div id="stop1" onclick="Ready()" >Ready</div>
+            <div id="stop2" onclick="Go()">Go</div>
+        </div>
+            <div id="col2">
+            <div class="stop" id="stop"></div><br/>
+            <div class="ready" id="ready"></div><br/>
+            <div class="go" id="go"></div>
+        </div>
+    </div>
+    <script src="./traffic.js"></script>
+</body>
+</html>

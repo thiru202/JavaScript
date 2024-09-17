@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #div{
+            width: 500px;
+            height: 700px;
+            display: block;
+            background-color: white;
+
+        }
+        #h1{
+            padding-top: 190px;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+            
+            
+        }
+        a{
+           text-decoration: none;
+           color: black;
+           width: 80px;
+           height: 50px; 
+           border: 2px solid black;
+           text-align: center;
+           margin-top: 10px;
+           padding-top: 20px;
+           padding-bottom: -10px;
+           border-radius: 20px;
+           /* justify-content: center;
+           align-items: center; */
+        }
+        /* span{
+            width: 80px;
+            height: 50px;
+        } */
+    </style>
+</head>
+<body>
+    <center>
+        <div id="div">
+    <h1 id="h1">COLOR PICKER</h1>
+
+    <div >
+        <div>
+            <a href="#" id="button1" style="background-color: #e0e0e0;" onclick="grey()">#e0e0e0</a>
+        </div>
+        <div>
+            <a href="#" id="button2" style="background-color: #67cf97;" onclick="green()">#6fcf97</a>
+        </div>
+        <div>
+            <a href="#" id="button3" style="background-color: #56ccf2;" onclick="aqua()">#56ccf2</a>
+        </div>
+        <div>
+            <a href="#" id="button4" style="background-color: #bb6bd9;" onclick="violet()">#bb6bd9</a>
+        </div>
+        
+       
+       
+        
+    </div>
+    <h1 id="head" style="background-color: black; color: white;">Background color:#ffffff</h1>
+    <p>Try clicking on one of the colors above to <br> changes the background    color of this page!</p>
+</div>
+</center>
+
+<script src="./color.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple budget App in JavaScript</h1>
+    <form action="">
+        
+        <label for="">Update Wallet:</label>
+        <input type="text" id="update" name="update" value="" onkeyup="totalAmount()" placeholder="Update wallet"/> <br> <br>
+
+        <!-- <input type="button" value="Add"  onclick="totalAmount()"/> <br> <br> -->
+
+        <label for="">Add Expense:</label>
+        <input type="text" id="expense" name="expense" value="" onkeyup="totalAmount()" placeholder="Add Expense"/> <br> <br>
+
+        <!-- <input type="button" value="Expense" onclick="expense()"/> <br/> <br/> -->
+        
+        
+        <h1>Wallet</h1>
+        <input type="text" id="wallet" name="wallet" value="" placeholder=""/> <br> <br>
+            
+        <h1>Expense</h1>
+        <input type="text" id="expenses" name="expenses" value="" placeholder=""/> <br> <br>
+            
+        <h1>Balance</h1>
+        <input type="text" id="balance" name="balance" value="" placeholder=""/> <br> <br>
+          
+
+
+    </form>
+    <table border="2px">
+        <thead>
+            <tr>
+             <td>Expense list</td> 
+             <td>Amount</td>   
+            </tr>
+        </thead>
+        <tbody>
+            <td>hair cut</td>
+            <td id="tbody"></td>
+
+        </tbody>
+    </table>
+
+    <script src="./App.js"></script>
+</body>
+</html>

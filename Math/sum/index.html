@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #container{
+            width: 400px;
+            height: 200px;
+            background-color: aqua;
+        } */
+        #con{
+            display: flex;
+        }
+        #s1,#s2,#s3,#s4,#s5{
+            width: 30px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+   
+   <div id="container">
+      <div id="con">
+        <div id="s1">0</div>
+        <div id="s2">+</div>
+        <div id="s3">0</div>
+        <div id="s4">=</div>
+        <input type="number" name="s5" id="s5" value=""/>
+      </div>
+      <div>
+        <button onclick="check()">Check</button>
+        <button onclick="restart()">Restart</button>
+      </div>
+      <p id="p"></p>
+   </div>
+    
+    <script src="./task6.js"></script>
+</body>
+</html>

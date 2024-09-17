@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+            width: 1000px;
+            height: 950px;
+            margin-left: 200px;
+            /* justify-content: space-evenly; */
+        }
+        #img1{
+            width: 200px;
+            /* height: 100px; */
+            margin-left: 400px;
+        }
+        #img2{
+            width: 250px;
+            height: 250px;
+            margin-left: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div" style="background-color: black;">
+        <div>
+           <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png" alt="" id="img1"/> <br> 
+           <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png" alt="" id="img2"/>
+        </div>
+        <div>
+        <center>
+            <h1 style="color: white;">Switched on</h1>
+            <button style="background-color: red; color: black;" onclick="recall()">OFF</button>
+            <button onclick="call()" style="background-color: green; color: aqua;">ON</button>
+        </center>
+        </div>
+    </div>
+
+   <script src="./blub.js"></script>
+</body>
+</html>
